@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SUPANG 苏枋 — 高端实木桑拿房制造商 | Premium Solid Wood Sauna Manufacturer</title>
+<meta name="description" content="SUPANG — 源头工厂直供，UL/CE 认证高端实木桑拿房制造商。远红外光波房、传统桑拿房、桶式桑拿、户外桑拿、三合一SPA套装、商用定制。SUPANG, a UL/CE certified manufacturer of premium solid wood saunas.">
+<style>
+/* ===== Reset & Base — White & Grey Premium ===== */
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Segoe UI',-apple-system,'PingFang SC','Microsoft YaHei',sans-serif;color:#2b2b2b;background:#ffffff;line-height:1.7}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+.container{max-width:1200px;margin:0 auto;padding:0 24px}
+section{padding:80px 0}
+h2{font-size:34px;font-weight:700;margin-bottom:12px;color:#111111;letter-spacing:1px}
+.sub{color:#8a8a8a;font-size:15px;margin-bottom:48px;max-width:640px}
+.btn{display:inline-block;background:#111111;color:#fff;padding:14px 34px;border-radius:2px;font-weight:600;font-size:15px;letter-spacing:1px;transition:.3s;border:none;cursor:pointer}
+.btn:hover{background:#000;transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.25)}
+.btn-light{background:#fff;color:#111;border:1px solid #c9c9c9}
+.btn-light:hover{background:#f4f4f4}
+.tag{display:inline-block;background:#111;color:#fff;font-size:11px;letter-spacing:3px;padding:7px 18px;border-radius:2px;margin-bottom:20px}
+
+/* ===== Topbar ===== */
+.topbar{background:#111111;color:#cfcfcf;font-size:13px;padding:8px 0}
+.topbar .container{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
+.topbar a{color:#e8e8e8}
+.topbar a:hover{color:#fff}
+
+/* ===== Header ===== */
+header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.97);backdrop-filter:blur(8px);border-bottom:1px solid #eaeaea;box-shadow:0 1px 10px rgba(0,0,0,.04)}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:16px 24px;max-width:1200px;margin:0 auto}
+.logo{display:flex;align-items:center;gap:10px;font-size:25px;font-weight:800;color:#111111;letter-spacing:2px}
+.logo small{display:block;font-size:9px;font-weight:400;color:#9a9a9a;letter-spacing:4px}
+.nav-links{display:flex;align-items:center;gap:30px;list-style:none}
+.nav-links a{font-size:14px;color:#4a4a4a;font-weight:500;letter-spacing:.5px;transition:.2s}
+.nav-links a:hover{color:#000}
+.lang-switch{display:flex;border:1px solid #d8d8d8;border-radius:20px;overflow:hidden}
+.lang-switch button{background:none;border:none;padding:6px 14px;font-size:13px;cursor:pointer;color:#9a9a9a}
+.lang-switch button.active{background:#111;color:#fff}
+.hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer}
+.hamburger span{width:26px;height:2px;background:#2b2b2b;border-radius:2px}
+
+/* ===== Hero ===== */
+.hero{position:relative;height:86vh;min-height:560px;display:flex;align-items:center;overflow:hidden;background:#f5f5f5}
+.hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:brightness(.5) contrast(1.05)}
+.hero-content{position:relative;z-index:2;color:#fff;max-width:680px}
+.hero h1{font-size:50px;line-height:1.2;font-weight:800;letter-spacing:1px;margin-bottom:20px}
+.hero p{font-size:17px;margin-bottom:36px;color:#e2e2e2;line-height:1.8}
+.hero .btns{display:flex;gap:16px;flex-wrap:wrap}
+
+/* ===== Trust Bar ===== */
+.trust{background:#111111;color:#cfcfcf;padding:36px 0}
+.trust .container{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:24px;text-align:center}
+.trust-item .num{font-size:30px;font-weight:800;color:#fff}
+.trust-item .lbl{font-size:13px;letter-spacing:1px;margin-top:4px;color:#9a9a9a}
+
+/* ===== Products ===== */
+.products{background:#fff}
+.prod-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:32px}
+.prod-card{background:#fff;border:1px solid #e8e8e8;border-radius:4px;overflow:hidden;transition:.35s}
+.prod-card:hover{transform:translateY(-6px);box-shadow:0 20px 48px rgba(0,0,0,.1)}
+.prod-card img{height:260px;width:100%;object-fit:cover;background:#f5f5f5}
+.prod-body{padding:26px}
+.prod-body h3{font-size:18px;margin-bottom:10px;color:#111;letter-spacing:.5px}
+.prod-body p{font-size:14px;color:#777;margin-bottom:14px}
+.prod-body .feat{display:flex;flex-wrap:wrap;gap:8px}
+.prod-body .feat span{background:#f4f4f4;color:#555;font-size:12px;padding:4px 12px;border-radius:20px;border:1px solid #e4e4e4}
+
+/* ===== Why Us ===== */
+.why{background:#f6f6f6}
+.why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:28px}
+.why-card{background:#fff;padding:34px 28px;border-radius:4px;border-top:3px solid #111;box-shadow:0 4px 20px rgba(0,0,0,.04);transition:.3s}
+.why-card:hover{box-shadow:0 12px 32px rgba(0,0,0,.09)}
+.why-card h4{font-size:16px;margin-bottom:10px;color:#111;letter-spacing:.5px}
+.why-card p{font-size:14px;color:#777}
+
+/* ===== Custom ===== */
+.custom{background:#111111;color:#d8d8d8}
+.custom h2{color:#fff}
+.custom .sub{color:#8a8a8a}
+.custom-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:28px;margin-bottom:40px}
+.custom-card{border:1px solid #2e2e2e;border-radius:4px;padding:30px;background:rgba(255,255,255,.02);transition:.3s}
+.custom-card:hover{border-color:#555}
+.custom-card h4{color:#fff;font-size:16px;margin-bottom:10px;letter-spacing:.5px}
+.custom-card p{font-size:14px;color:#9a9a9a}
+
+/* ===== Certifications ===== */
+.cert{background:#fff}
+.cert-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px}
+.cert-card{text-align:center;padding:40px 20px;border:1px solid #e8e8e8;border-radius:4px;transition:.3s}
+.cert-card:hover{border-color:#111;box-shadow:0 8px 24px rgba(0,0,0,.07)}
+.cert-card .badge{font-size:34px;font-weight:800;color:#111;letter-spacing:2px;margin-bottom:12px}
+.cert-card h4{font-size:15px;margin-bottom:8px;color:#111}
+.cert-card p{font-size:13px;color:#8a8a8a}
+
+/* ===== About / Factory ===== */
+.about{background:#fafafa}
+.about-flex{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.about-flex img{border-radius:4px;height:420px;object-fit:cover;filter:grayscale(.2)}
+.about-list{list-style:none;margin-top:20px}
+.about-list li{padding:10px 0;border-bottom:1px dashed #ddd;font-size:14px;color:#555;display:flex;gap:12px;align-items:flex-start}
+.about-list li::before{content:"✓";color:#111;font-weight:800}
+
+/* ===== Contact ===== */
+.contact{background:#fff}
+.contact-flex{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+.contact-info .row{display:flex;gap:14px;padding:16px 0;border-bottom:1px solid #ececec;align-items:center}
+.contact-info .row .icon{font-size:20px;color:#111}
+.contact-info a{color:#111;font-weight:600}
+.contact-info a:hover{text-decoration:underline}
+.form-group{margin-bottom:18px}
+.form-group label{display:block;font-size:13px;font-weight:600;margin-bottom:6px;color:#4a4a4a}
+.form-group input,.form-group select,.form-group textarea{width:100%;padding:12px 14px;border:1px solid #dcdcdc;border-radius:2px;font-size:14px;background:#fafafa;font-family:inherit;transition:.2s}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{outline:none;border-color:#111;background:#fff}
+.form-group textarea{min-height:110px;resize:vertical}
+
+/* ===== Footer ===== */
+footer{background:#0e0e0e;color:#9a9a9a;padding:56px 0 24px}
+.footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:40px;margin-bottom:40px}
+footer h5{color:#fff;font-size:14px;margin-bottom:16px;letter-spacing:1px}
+footer ul{list-style:none}
+footer ul li{margin-bottom:10px;font-size:14px}
+footer ul li a:hover{color:#fff}
+.copyright{text-align:center;font-size:13px;border-top:1px solid #222;padding-top:20px}
+
+/* ===== Responsive ===== */
+@media(max-width:860px){
+  .nav-links{display:none;position:absolute;top:100%;left:0;right:0;background:#fff;flex-direction:column;padding:20px;box-shadow:0 8px 20px rgba(0,0,0,.1)}
+  .nav-links.open{display:flex}
+  .hamburger{display:flex}
+  .hero h1{font-size:34px}
+  .about-flex,.contact-flex{grid-template-columns:1fr}
+  section{padding:56px 0}
+  h2{font-size:26px}
+  .hero{height:auto;min-height:500px;padding:80px 0}
+}
+/* Language switching */
+[data-lang="en"]{display:none}
+body.en [data-lang="zh"]{display:none}
+body.en [data-lang="en"]{display:block}
+</style>
+</head>
+<body>
+
+<!-- ===== Topbar ===== -->
+<div class="topbar">
+  <div class="container">
+    <span data-lang="zh">📍 源头工厂 · 安徽南陵 | OEM/ODM 外贸定制 · 欢迎来厂洽谈</span>
+    <span data-lang="en">📍 Source Factory · Nanling, Anhui | OEM/ODM & Export Customization · Factory Visits Welcome</span>
+    <span><a href="mailto:zhouhongyu@supang.com.cn">✉ zhouhongyu@supang.com.cn</a>&nbsp;|&nbsp;<a href="https://wa.me/8618112562969" target="_blank" rel="noopener">WhatsApp: +86 181 1256 2969</a></span>
+  </div>
+</div>
+
+<!-- ===== Header ===== -->
+<header>
+  <div class="nav">
+    <a class="logo" href="#">
+      SUPANG<small data-lang="zh">苏枋 · 高端桑拿房</small><small data-lang="en">PREMIUM SAUNA</small>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#products" data-lang="zh">产品中心</a><a href="#products" data-lang="en">Products</a></li>
+      <li><a href="#why" data-lang="zh">为什么选择我们</a><a href="#why" data-lang="en">Why Us</a></li>
+      <li><a href="#custom" data-lang="zh">定制能力</a><a href="#custom" data-lang="en">Customization</a></li>
+      <li><a href="#cert" data-lang="zh">认证资质</a><a href="#cert" data-lang="en">Certifications</a></li>
+      <li><a href="#about" data-lang="zh">工厂实力</a><a href="#about" data-lang="en">About</a></li>
+      <li><a href="#contact" data-lang="zh">联系我们</a><a href="#contact" data-lang="en">Contact</a></li>
+    </ul>
+    <div class="lang-switch">
+      <button onclick="setLang('zh')" id="btnZh">中</button>
+      <button onclick="setLang('en')" id="btnEn">EN</button>
+    </div>
+    <button class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- ===== Hero ===== -->
+<section class="hero" id="home">
+  <img class="bg" src="images/hero-main.jpg" alt="SUPANG premium sauna">
+  <div class="container">
+    <div class="hero-content">
+      <span class="tag" data-lang="zh">UL / CE 认证制造商</span><span class="tag" data-lang="en">UL / CE CERTIFIED MANUFACTURER</span>
+      <h1 data-lang="zh">高端实木桑拿房<br>源头工厂 · 全球直供</h1>
+      <h1 data-lang="en">Premium Solid Wood Saunas<br>Direct from the Source Factory</h1>
+      <p data-lang="zh">SUPANG 苏枋 —— 集研发、生产、出口于一体的桑拿房制造商。远红外光波房、传统桑拿房、桶式桑拿、户外桑拿、三合一 SPA 套装与商用定制，支持 OEM/ODM，交期稳定，认证齐全。</p>
+      <p data-lang="en">SUPANG is an integrated manufacturer of premium saunas — infrared, traditional Finnish, barrel, outdoor, 3-in-1 SPA suites and commercial custom cabins. OEM/ODM supported, stable lead times, full certifications.</p>
+      <div class="btns">
+        <a href="#contact" class="btn" data-lang="zh">获取报价 →</a><a href="#contact" class="btn" data-lang="en">Get a Quote →</a>
+        <a href="#products" class="btn btn-light" data-lang="zh">查看产品</a><a href="#products" class="btn btn-light" data-lang="en">View Products</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Trust Bar ===== -->
+<div class="trust">
+  <div class="container">
+    <div class="trust-item"><div class="num">10+</div><div class="lbl" data-lang="zh">年出口经验</div><div class="lbl" data-lang="en">Years Export Experience</div></div>
+    <div class="trust-item"><div class="num">50+</div><div class="lbl" data-lang="zh">出口国家/地区</div><div class="lbl" data-lang="en">Export Destinations</div></div>
+    <div class="trust-item"><div class="num">100%</div><div class="lbl" data-lang="zh">实木选材 · 工厂直供</div><div class="lbl" data-lang="en">Solid Wood · Factory Direct</div></div>
+    <div class="trust-item"><div class="num">UL/CE</div><div class="lbl" data-lang="zh">控制系统认证</div><div class="lbl" data-lang="en">Control System Certified</div></div>
+  </div>
+</div>
+
+<!-- ===== Products (6 categories) ===== -->
+<section class="products" id="products">
+  <div class="container">
+    <span class="tag" data-lang="zh">PRODUCTS</span><span class="tag" data-lang="en">PRODUCTS</span>
+    <h2 data-lang="zh">产品中心</h2><h2 data-lang="en">Our Products</h2>
+    <p class="sub" data-lang="zh">六大产品线，覆盖家用、商用、定制全场景。木种可选加拿大红雪松、铁杉、云杉，尺寸均可定制。</p>
+    <p class="sub" data-lang="en">Six product lines covering home, commercial and custom scenarios. Wood options: Canadian Red Cedar, Hemlock, Spruce. All sizes customizable.</p>
+    <div class="prod-grid">
+      <!-- 1. Far Infrared -->
+      <div class="prod-card">
+        <img src="images/infrared-main.jpg" alt="Far infrared sauna">
+        <div class="prod-body">
+          <h3 data-lang="zh">远红外光波房</h3><h3 data-lang="en">Far Infrared Sauna</h3>
+          <p data-lang="zh">组合发热技术，升温迅速，低电磁辐射。1-6 人多种尺寸，家用商用皆宜，控制系统 UL/FCC/RoHS 认证。</p>
+          <p data-lang="en">Combined heating, rapid temperature rise, low EMF. 1-6 person sizes for home & commercial use. UL/FCC/RoHS certified control system.</p>
+          <div class="feat"><span>UL Control</span><span>FCC</span><span>RoHS</span><span>1-6 Person</span></div>
+        </div>
+      </div>
+      <!-- 2. Traditional -->
+      <div class="prod-card">
+        <img src="images/traditional-main.jpg" alt="Traditional sauna">
+        <div class="prod-body">
+          <h3 data-lang="zh">传统桑拿房（麦饭石炉）</h3><h3 data-lang="en">Traditional Sauna (Maifan Stone Stove)</h3>
+          <p data-lang="zh">高品质桑拿炉+火山石，升温迅速，真实芬兰式桑拿体验。全实木结构，整机 CE 认证。</p>
+          <p data-lang="en">High-quality stove with volcanic stones, fast heating, authentic Finnish experience. Solid wood, CE certified.</p>
+          <div class="feat"><span>CE</span><span>Finnish Style</span><span>Custom Size</span></div>
+        </div>
+      </div>
+      <!-- 3. Barrel -->
+      <div class="prod-card">
+        <img src="images/barrel-sauna.jpg" alt="Barrel sauna">
+        <div class="prod-body">
+          <h3 data-lang="zh">桶式桑拿房</h3><h3 data-lang="en">Barrel Saunas</h3>
+          <p data-lang="zh">红雪松/铁杉桶式桑拿，实木厚板结构，配柴火炉或电炉。经典北欧造型，耐候防腐。</p>
+          <p data-lang="en">Red Cedar / Hemlock barrel saunas with solid thick-wall construction, wood-burning or electric stoves. Classic Nordic design.</p>
+          <div class="feat"><span>Red Cedar</span><span>Wood Stove</span><span>Weatherproof</span></div>
+        </div>
+      </div>
+      <!-- 4. Outdoor -->
+      <div class="prod-card">
+        <img src="images/outdoor-cabin.jpg" alt="Outdoor sauna cabin">
+        <div class="prod-body">
+          <h3 data-lang="zh">户外桑拿木屋</h3><h3 data-lang="en">Outdoor Sauna Cabins</h3>
+          <p data-lang="zh">花园/庭院/营地户外木屋桑拿，配柴火炉或电炉，出口级耐候工艺与防水屋顶。</p>
+          <p data-lang="en">Garden, yard & campsite outdoor cabins with wood-burning or electric stoves. Export-grade weatherproofing & waterproof roofing.</p>
+          <div class="feat"><span>Outdoor Grade</span><span>Waterproof</span><span>Wood Stove</span></div>
+        </div>
+      </div>
+      <!-- 5. 3-in-1 SPA -->
+      <div class="prod-card">
+        <img src="images/spa-set-main.jpg" alt="3-in-1 SPA suite">
+        <div class="prod-body">
+          <h3 data-lang="zh">三合一 SPA 套装</h3><h3 data-lang="en">3-in-1 SPA Suites</h3>
+          <p data-lang="zh">桑拿房 + 热水按摩浴缸 + 冷水浴池一体组合，高端理疗中心、度假村整案交付。</p>
+          <p data-lang="en">Sauna + hot tub + cold plunge in one integrated suite. Turnkey solutions for premium spas & resorts.</p>
+          <div class="feat"><span>Sauna+Hot Tub+Plunge</span><span>Turnkey</span><span>Commercial</span></div>
+        </div>
+      </div>
+      <!-- 6. Commercial Custom -->
+      <div class="prod-card">
+        <img src="images/commercial-main.jpg" alt="Commercial custom sauna">
+        <div class="prod-body">
+          <h3 data-lang="zh">商用定制项目</h3><h3 data-lang="en">Commercial Custom Projects</h3>
+          <p data-lang="zh">理疗中心、酒店、Glamping 营地大型定制，12 米级桑拿木屋按图纸生产，一站式交付。</p>
+          <p data-lang="en">Large custom builds for spas, hotels & glamping sites — up to 12-meter cabins, built to drawings, one-stop delivery.</p>
+          <div class="feat"><span>Custom</span><span>Project-based</span><span>Turnkey</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Why Us ===== -->
+<section class="why" id="why">
+  <div class="container">
+    <span class="tag" data-lang="zh">WHY SUPANG</span><span class="tag" data-lang="en">WHY SUPANG</span>
+    <h2 data-lang="zh">为什么选择 SUPANG</h2><h2 data-lang="en">Why Choose SUPANG</h2>
+    <p class="sub" data-lang="zh">作为源头工厂，我们为全球客户提供从产品到交付的完整解决方案。</p>
+    <p class="sub" data-lang="en">As a source factory, we provide complete solutions from product to delivery for global clients.</p>
+    <div class="why-grid">
+      <div class="why-card"><h4 data-lang="zh">源头工厂直供</h4><h4 data-lang="en">Direct Factory Supply</h4><p data-lang="zh">自有工厂，无中间商，价格透明，品质可控。欢迎来厂验货洽谈。</p><p data-lang="en">Own factory, no middlemen, transparent pricing, full quality control. Factory visits welcome.</p></div>
+      <div class="why-card"><h4 data-lang="zh">认证齐全</h4><h4 data-lang="en">Full Certifications</h4><p data-lang="zh">控制系统 UL / FCC / RoHS 认证，整机 CE 认证，符合欧美市场准入要求。</p><p data-lang="en">Control systems UL / FCC / RoHS certified, whole-unit CE certified — compliant for EU & US markets.</p></div>
+      <div class="why-card"><h4 data-lang="zh">OEM/ODM 定制</h4><h4 data-lang="en">OEM/ODM Customization</h4><p data-lang="zh">尺寸、木种、炉型、外观均可定制，按图纸生产，支持品牌贴牌。</p><p data-lang="en">Custom sizes, wood species, stoves & finishes. Built to drawings, private label supported.</p></div>
+      <div class="why-card"><h4 data-lang="zh">稳定交期</h4><h4 data-lang="en">Stable Lead Times</h4><p data-lang="zh">标准化产线+定制车间并行，批量订单交期可控，包装符合海运标准。</p><p data-lang="en">Standard lines + custom workshop run in parallel. Reliable delivery, ocean-grade packaging.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Custom ===== -->
+<section class="custom" id="custom">
+  <div class="container">
+    <span class="tag" data-lang="zh">CUSTOMIZATION</span><span class="tag" data-lang="en">CUSTOMIZATION</span>
+    <h2 data-lang="zh">定制能力</h2><h2 data-lang="en">Customization Capabilities</h2>
+    <p class="sub" data-lang="zh">从标准产品到大型商用项目，我们都能承接。</p>
+    <p class="sub" data-lang="en">From standard products to large commercial projects, we handle it all.</p>
+    <div class="custom-grid">
+      <div class="custom-card"><h4 data-lang="zh">木种选择</h4><h4 data-lang="en">Wood Species</h4><p data-lang="zh">加拿大红雪松（高端）、铁杉（性价比）、云杉（经济型），内外墙可混搭。</p><p data-lang="en">Canadian Red Cedar (premium), Hemlock (value), Spruce (economy). Interior/exterior combinations available.</p></div>
+      <div class="custom-card"><h4 data-lang="zh">加热方案</h4><h4 data-lang="en">Heating Options</h4><p data-lang="zh">远红外碳纤维（低EMF）、传统电炉+火山石、柴火炉，电压支持 110V/220V/240V。</p><p data-lang="en">Far-infrared carbon fiber (low EMF), traditional electric stove + volcanic stones, wood-burning. 110V/220V/240V.</p></div>
+      <div class="custom-card"><h4 data-lang="zh">尺寸定制</h4><h4 data-lang="en">Custom Sizes</h4><p data-lang="zh">家用标准款到 12 米级商用桑拿木屋，按图纸生产，结构强度经工程验证。</p><p data-lang="en">Home standards to 12-meter commercial cabins, built to drawings with engineered structures.</p></div>
+      <div class="custom-card"><h4 data-lang="zh">配套服务</h4><h4 data-lang="en">Support Services</h4><p data-lang="zh">中英文安装手册、视频安装指导、售后配件供应、海运包装方案。</p><p data-lang="en">Bilingual manuals, video installation guides, after-sales parts, ocean-shipping packaging solutions.</p></div>
+    </div>
+    <a href="#contact" class="btn" data-lang="zh">提交您的定制需求 →</a><a href="#contact" class="btn" data-lang="en">Submit Your Custom Request →</a>
+  </div>
+</section>
+
+<!-- ===== Certifications ===== -->
+<section class="cert" id="cert">
+  <div class="container">
+    <span class="tag" data-lang="zh">CERTIFICATIONS</span><span class="tag" data-lang="en">CERTIFICATIONS</span>
+    <h2 data-lang="zh">认证资质</h2><h2 data-lang="en">Certifications</h2>
+    <p class="sub" data-lang="zh">合规是我们出海的底线——控制系统 UL、整机 CE、澳洲 SAA/RCM、无线 RED、环保 RoHS，覆盖全球主流市场准入。</p>
+    <p class="sub" data-lang="en">Compliance is our baseline — UL control system, CE whole unit, Australia/NZ SAA-RCM, RED radio, RoHS — covering global market access.</p>
+    <div class="cert-grid">
+      <div class="cert-card"><div class="badge">UL</div><h4 data-lang="zh">控制系统 UL 认证</h4><h4 data-lang="en">Control System UL (IEC 61010-1)</h4><p data-lang="zh">智能控制器通过 UL 61010-1 安全测试，符合北美电气标准，商用场所安心使用。</p><p data-lang="en">Smart controller tested to UL 61010-1 — meets North American electrical safety standards for commercial use.</p></div>
+      <div class="cert-card"><div class="badge">SAA</div><h4 data-lang="zh">澳洲 SAA / RCM 认证</h4><h4 data-lang="en">Australia / NZ SAA-RCM</h4><p data-lang="zh">桑拿加热器全系列通过 AS/NZS 60335 认证（RCM 标志），澳新市场合规。</p><p data-lang="en">Sauna heater series certified to AS/NZS 60335 with RCM mark — compliant for Australia & New Zealand.</p></div>
+      <div class="cert-card"><div class="badge">CE</div><h4 data-lang="zh">整机 CE 认证</h4><h4 data-lang="en">Whole Unit CE</h4><p data-lang="zh">LVD 低电压 + EMC 电磁兼容双指令合规，畅通进入欧洲市场。</p><p data-lang="en">LVD & EMC directives compliant — smooth access to the European market.</p></div>
+      <div class="cert-card"><div class="badge">RED</div><h4 data-lang="zh">无线 RED 认证</h4><h4 data-lang="en">Radio Equipment RED</h4><p data-lang="zh">智能控制器（WiFi/蓝牙）通过 RED 2014/53/EU，无线功能合规。</p><p data-lang="en">Smart controllers (WiFi/Bluetooth) certified to RED 2014/53/EU — wireless compliant.</p></div>
+      <div class="cert-card"><div class="badge">RoHS</div><h4 data-lang="zh">RoHS 环保</h4><h4 data-lang="en">RoHS Compliant</h4><p data-lang="zh">有害物质限制达标（IEC 62321），健康环保。</p><p data-lang="en">Restricted substances compliant (IEC 62321) — healthy and eco-friendly.</p></div>
+      <div class="cert-card"><div class="badge">FCC</div><h4 data-lang="zh">FCC 认证</h4><h4 data-lang="en">FCC Certified</h4><p data-lang="zh">电磁兼容性符合美国联邦标准。</p><p data-lang="en">EMC compliance with US federal standards.</p></div>
+    </div>
+    <p class="sub" style="margin-top:36px;margin-bottom:0;text-align:center">
+      <a href="certificates/UL-Test-Report-LST250998018.pdf" target="_blank" rel="noopener" style="color:#111;font-weight:600;text-decoration:underline" data-lang="zh">📄 下载 UL 测试报告（PDF）</a><a href="certificates/UL-Test-Report-LST250998018.pdf" target="_blank" rel="noopener" style="color:#111;font-weight:600;text-decoration:underline" data-lang="en">📄 Download UL Test Report (PDF)</a>
+      &nbsp;·&nbsp;
+      <a href="certificates/CE-EMC-Declaration-BC45.pdf" target="_blank" rel="noopener" style="color:#111;font-weight:600;text-decoration:underline" data-lang="zh">📄 下载 CE-EMC 声明（PDF）</a><a href="certificates/CE-EMC-Declaration-BC45.pdf" target="_blank" rel="noopener" style="color:#111;font-weight:600;text-decoration:underline" data-lang="en">📄 Download CE-EMC DoC (PDF)</a>
+      &nbsp;·&nbsp;
+      <a href="certificates/RED-Certificate-LST220798053E.pdf" target="_blank" rel="noopener" style="color:#111;font-weight:600;text-decoration:underline" data-lang="zh">📄 下载 RED 证书（PDF）</a><a href="certificates/RED-Certificate-LST220798053E.pdf" target="_blank" rel="noopener" style="color:#111;font-weight:600;text-decoration:underline" data-lang="en">📄 Download RED Certificate (PDF)</a>
+    </p>
+  </div>
+</section>
+
+<!-- ===== About / Factory ===== -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-flex">
+      <img src="images/commercial-main.jpg" alt="SUPANG factory workshop">
+      <div>
+        <span class="tag" data-lang="zh">ABOUT US</span><span class="tag" data-lang="en">ABOUT US</span>
+        <h2 data-lang="zh">源头工厂 · 实力见证</h2><h2 data-lang="en">Source Factory Strength</h2>
+        <p data-lang="zh" style="color:#777;font-size:15px">SUPANG（苏枋）隶属 Cassina Health Technology，位于安徽南陵，是一家集实木桑拿房研发、生产、出口于一体的制造企业。我们服务全球理疗中心、度假村、贸易商与品牌客户。</p>
+        <p data-lang="en" style="color:#777;font-size:15px">SUPANG, part of Cassina Health Technology, is a manufacturer of solid wood saunas based in Nanling, Anhui, China. We serve spas, resorts, traders and branded clients worldwide.</p>
+        <ul class="about-list">
+          <li data-lang="zh">自有标准化产线 + 定制车间，月产能稳定</li><li data-lang="en">Standard production lines + custom workshop, stable monthly capacity</li>
+          <li data-lang="zh">全实木选材，含水率/防虫处理严格把控</li><li data-lang="en">100% solid wood with strict moisture & pest treatment control</li>
+          <li data-lang="zh">出口包装标准（木箱/托盘），海运经验丰富</li><li data-lang="en">Export-grade packaging (wooden crates/pallets), extensive shipping experience</li>
+          <li data-lang="zh">提供中英文手册、安装视频、售后配件</li><li data-lang="en">Bilingual manuals, installation videos, after-sales parts</li>
+          <li data-lang="zh">外贸团队 7 天响应，欢迎视频验厂/来厂考察</li><li data-lang="en">Foreign trade team responds 7 days a week — video or on-site factory audits welcome</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Contact ===== -->
+<section class="contact" id="contact">
+  <div class="container">
+    <span class="tag" data-lang="zh">CONTACT</span><span class="tag" data-lang="en">CONTACT</span>
+    <h2 data-lang="zh">联系我们</h2><h2 data-lang="en">Get In Touch</h2>
+    <p class="sub" data-lang="zh">告诉我们您的需求（产品、数量、木种、尺寸），24 小时内给您报价方案。</p>
+    <p class="sub" data-lang="en">Tell us your needs (product, quantity, wood, size) and get a quotation within 24 hours.</p>
+    <div class="contact-flex">
+      <div class="contact-info">
+        <div class="row"><span class="icon">✉</span><div><strong data-lang="zh">邮箱 / Email</strong><br><a href="mailto:zhouhongyu@supang.com.cn">zhouhongyu@supang.com.cn</a></div></div>
+        <div class="row"><span class="icon">💬</span><div><strong>WhatsApp</strong><br><a href="https://wa.me/8618112562969" target="_blank" rel="noopener">+86 181 1256 2969</a></div></div>
+        <div class="row"><span class="icon">🌐</span><div><strong>Alibaba</strong><br><a href="https://www.alibaba.com" target="_blank" rel="noopener">SUPANG 阿里巴巴国际站</a></div></div>
+        <div class="row"><span class="icon">🏭</span><div><strong data-lang="zh">工厂地址</strong><strong data-lang="en">Factory</strong><br><span data-lang="zh">中国安徽省南陵市（具体地址请联系获取）</span><span data-lang="en">Nanling, Anhui, China (full address upon request)</span></div></div>
+        <div class="row"><span class="icon">🕐</span><div><strong data-lang="zh">响应时间</strong><strong data-lang="en">Response</strong><br><span data-lang="zh">工作日 24 小时内回复</span><span data-lang="en">Replies within 24h on business days</span></div></div>
+      </div>
+      <form class="contact-form" onsubmit="return handleForm(event)">
+        <div class="form-group"><label data-lang="zh">您的姓名 *</label><label data-lang="en">Your Name *</label><input type="text" name="name" required></div>
+        <div class="form-group"><label data-lang="zh">公司名称</label><label data-lang="en">Company</label><input type="text" name="company"></div>
+        <div class="form-group"><label data-lang="zh">邮箱 *</label><label data-lang="en">Email *</label><input type="email" name="email" required></div>
+        <div class="form-group"><label data-lang="zh">感兴趣的产品</label><label data-lang="en">Product of Interest</label>
+          <select name="product">
+            <option data-lang="zh" value="infrared">远红外光波房 / Far Infrared Sauna</option>
+            <option data-lang="zh" value="traditional">传统桑拿房 / Traditional Sauna</option>
+            <option data-lang="zh" value="barrel">桶式桑拿 / Barrel Sauna</option>
+            <option data-lang="zh" value="outdoor">户外桑拿木屋 / Outdoor Cabin</option>
+            <option data-lang="zh" value="spa">三合一SPA套装 / 3-in-1 SPA Suite</option>
+            <option data-lang="zh" value="custom">商用定制 / Commercial Custom</option>
+            <option data-lang="zh" value="other">其他 / Other</option>
+          </select>
+        </div>
+        <div class="form-group"><label data-lang="zh">需求描述（数量/木种/尺寸）</label><label data-lang="en">Requirements (qty/wood/size)</label><textarea name="message"></textarea></div>
+        <button type="submit" class="btn" data-lang="zh">提交询盘 →</button><button type="submit" class="btn" data-lang="en">Send Inquiry →</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h5>SUPANG 苏枋</h5>
+        <ul><li data-lang="zh">高端实木桑拿房制造商</li><li data-lang="en">Premium solid wood sauna manufacturer</li><li data-lang="zh">UL/CE 认证 · 源头工厂直供</li><li data-lang="en">UL/CE certified · Factory direct</li></ul>
+      </div>
+      <div>
+        <h5 data-lang="zh">快速链接</h5><h5 data-lang="en">Quick Links</h5>
+        <ul>
+          <li><a href="#products" data-lang="zh">产品中心</a><a href="#products" data-lang="en">Products</a></li>
+          <li><a href="#custom" data-lang="zh">定制能力</a><a href="#custom" data-lang="en">Customization</a></li>
+          <li><a href="#cert" data-lang="zh">认证资质</a><a href="#cert" data-lang="en">Certifications</a></li>
+          <li><a href="#contact" data-lang="zh">联系我们</a><a href="#contact" data-lang="en">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 data-lang="zh">联系</h5><h5 data-lang="en">Contact</h5>
+        <ul>
+          <li>Email: <a href="mailto:zhouhongyu@supang.com.cn">zhouhongyu@supang.com.cn</a></li>
+          <li>WhatsApp: <a href="https://wa.me/8618112562969" target="_blank" rel="noopener">+86 181 1256 2969</a></li>
+          <li data-lang="zh">安徽南陵 · 中国</li><li data-lang="en">Nanling, Anhui · China</li>
+        </ul>
+      </div>
+      <div>
+        <h5 data-lang="zh">定制询盘</h5><h5 data-lang="en">Custom Inquiries</h5>
+        <ul>
+          <li data-lang="zh">✓ 木种/尺寸/炉型定制</li><li data-lang="en">✓ Wood / size / stove customization</li>
+          <li data-lang="zh">✓ OEM/ODM 贴牌</li><li data-lang="en">✓ OEM/ODM private label</li>
+          <li data-lang="zh">✓ 商用项目按图生产</li><li data-lang="en">✓ Commercial build-to-drawings</li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">© 2026 SUPANG · Cassina Health Technology. <span data-lang="zh">保留所有权利</span><span data-lang="en">All rights reserved</span></div>
+  </div>
+</footer>
+
+<script>
+// ===== Language switching =====
+let currentLang = 'zh';
+function setLang(lang){
+  currentLang = lang;
+  document.body.classList.toggle('en', lang === 'en');
+  document.getElementById('btnZh').classList.toggle('active', lang === 'zh');
+  document.getElementById('btnEn').classList.toggle('active', lang === 'en');
+  document.documentElement.lang = lang;
+}
+// ===== Mobile menu =====
+function toggleMenu(){ document.getElementById('navLinks').classList.toggle('open'); }
+// ===== Contact form =====
+function handleForm(e){
+  e.preventDefault();
+  const f = e.target;
+  const name = f.name.value, email = f.email.value;
+  if(!name || !email){ return false; }
+  const subject = encodeURIComponent('[SUPANG Website Inquiry] ' + (f.company.value || 'B2B inquiry'));
+  const body = encodeURIComponent(
+    'Name: ' + name + '\nCompany: ' + (f.company.value||'-') + '\nEmail: ' + email +
+    '\nProduct: ' + (f.product.value||'-') + '\nMessage: ' + (f.message.value||'-')
+  );
+  window.location.href = 'mailto:zhouhongyu@supang.com.cn?subject=' + subject + '&body=' + body;
+  alert(currentLang === 'zh' ? '已为您打开邮件客户端，请点击发送完成提交。' : 'Your email client has been opened — press send to complete your inquiry.');
+  return false;
+}
+// Init
+setLang('zh');
+</script>
+</body>
+</html>
